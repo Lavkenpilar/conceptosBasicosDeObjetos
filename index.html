@@ -44,7 +44,12 @@ text.innerHTML= "Hola, soy" + persona.nombre.apellido
 persona.bio()
 persona.saludo()
 
-// haciendo que el valor de un miembro de un objeto sea otro objeto
+// actualizando el valor de los miembros de un objeto
+persona.edad = 45
+persona ["nombre"]["apellido"] = "Cratchit"
+console.log (persona.edad)
+console.log (persona ["nombre"]["pila"])
+console.log (persona ["nombre"]["apellido"])
 
 
 
