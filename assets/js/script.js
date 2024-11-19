@@ -12,6 +12,7 @@
          alert(
              `${this.nombre[0]} ${this.nombre[1]} tiene ${this.edad} años. Le gusta ${this.intereses[0]} y ${this.intereses[1]}.`
          )
+         // this es una forma segura de sustituir el nombre del objeto
      },
      saludo:function() {
          alert ("Hola, soy"+this.nombre[0]+".")
@@ -52,4 +53,18 @@
 console.log (persona ["ojos"])
 persona.despedida()
  
- 
+ // ejemplos con el uso de this
+ const persona1 = {
+    nombre:"Cris",
+    saludo:function(){
+        alert ("Hola, soy" + this.nombre + ".")
+    }
+ }
+ const persona2 = {
+    nombre:"Brian",
+    saludo:function(){
+        alert ("Hola, soy" + this.nombre + ".")
+    }
+ }
+ persona1.saludo()
+ persona2.saludo()
