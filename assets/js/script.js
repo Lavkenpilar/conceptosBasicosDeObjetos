@@ -16,9 +16,15 @@
      saludo:function() {
          alert ("Hola, soy"+this.nombre[0]+".")
      }
- }
- /*console.log (persona.saludo)
- console.log (persona.nombre.pila)*/
+    }
+    // agregando un nuevo miembro y valor a un objeto
+    const nombrePersonalizado = "altura"
+    const valorPersonalizado = "1.75m"
+    persona[nombrePersonalizado] = valorPersonalizado
+    console.log (persona.altura)
+
+ console.log (persona.saludo)
+ console.log (persona.nombre.pila)
  
  // accediendo a los elementos de un arreglo a traves de []
  
@@ -38,5 +44,12 @@
  console.log (persona ["nombre"]["pila"])
  console.log (persona ["nombre"]["apellido"])
  
+ // creando nuevos miembros al objeto
+ persona ["ojos"] = "avellana"
+ persona.despedida = function (){
+    alert ("Adios a todos")
+ }
+console.log (persona ["ojos"])
+persona.despedida()
  
  
